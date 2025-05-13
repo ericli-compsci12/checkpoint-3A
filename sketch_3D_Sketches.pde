@@ -17,27 +17,8 @@ void setup () {
 
 void draw () {
   background(255);
-  if (ckey) {
-  translate(mouseX,mouseY,0); 
-}
-  else if (!ckey) {
-  translate(width/2,height/2,0); 
-}
-  
-  fill(255,0,0);
-  rotateX(rotx);
-  rotateY(roty);
-  //rotateZ();
-  stroke(0);
-  strokeWeight(3);
-  box(200,200,200);  //W(idth) H(eight) D(iameter)
-  
-  if (akey) {
-   anx = anx + 5;
-   anb = anb + 5;
-  rotx = radians(anx);
-  roty = radians(anb);
-  }
+  cube2();
+  cube(width/2+200,height/2+200,0,#0000FF,30);
 }
 
 void mouseDragged() { 
