@@ -1,3 +1,6 @@
+//x: ddefault mode
+//c: user control mode
+//a: autonomous mode
 float rotx,roty;
 boolean ckey = false;
 boolean akey = false;
